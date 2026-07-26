@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Impact Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>📱 Social Media Impact Analyzer</h1>
+        <p>Know how social media affects your daily life.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#tracker">Tracker</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#tips">Tips</a>
+        <a href="#result">Result</a>
+    </nav>
+
+    <!-- Tracker -->
+    <section id="tracker">
+
+        <h2>⏰ Daily Screen Time</h2>
+
+        <label>How many hours do you use social media daily?</label>
+
+        <input
+            type="number"
+            id="hours"
+            placeholder="Example: 3"
+            min="0"
+            max="24"
+        >
+
+        <button onclick="checkUsage()">
+            Analyze
+        </button>
+
+        <p id="usageResult"></p>
+
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz">
+
+        <h2>🧠 Mental Health Questionnaire</h2>
+
+        <div class="question">
+
+            <p>1. Do you feel anxious without social media?</p>
+
+            <select id="q1">
+                <option value="0">Select</option>
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+            </select>
+
+        </div>
+
+        <div class="question">
+
+            <p>2. Do you compare yourself with others online?</p>
+
+            <select id="q2">
+                <option value="0">Select</option>
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+            </select>
+
+        </div>
+
+        <div class="question">
+
+            <p>3. Do you use social media before sleeping?</p>
+
+            <select id="q3">
+                <option value="0">Select</option>
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+            </select>
+
+        </div>
+
+        <div class="question">
+
+            <p>4. Does social media reduce your productivity?</p>
+
+            <select id="q4">
+                <option value="0">Select</option>
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+            </select>
+
+        </div>
+
+        <button onclick="calculateScore()">
+            Submit Quiz
+        </button>
+
+    </section>
+
+    <!-- Tips -->
+
+    <section id="tips">
+
+        <h2>💡 Healthy Social Media Tips</h2>
+
+        <ul>
+
+            <li>Limit daily usage to 2 hours.</li>
+
+            <li>Turn off unnecessary notifications.</li>
+
+            <li>Avoid social media before bedtime.</li>
+
+            <li>Spend more time with family and friends.</li>
+
+            <li>Read books or exercise instead of scrolling.</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Result -->
+
+    <section id="result">
+
+        <h2>📊 Your Analysis</h2>
+
+        <div id="finalResult">
+
+            Complete the tracker and quiz to see your result.
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Social Media Impact Analyzer
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
